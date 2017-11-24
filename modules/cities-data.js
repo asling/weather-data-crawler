@@ -1,5 +1,5 @@
 const cheerio = require("cheerio");
-const request = require("./request-wrapper");
+const request = require("../util/request");
 
 module.exports = function(link,errHandler){
 

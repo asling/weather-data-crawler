@@ -1,5 +1,5 @@
 const cheerio = require("cheerio");
-const request = require("./request-wrapper");
+const request = require("../util/request");
 
 module.exports = function(link,errHandler){
 
@@ -17,6 +17,8 @@ module.exports = function(link,errHandler){
 		  contentArr.push($(this).attr("data-href"));
 		});
 		return contentArr;
+	}).catch(e => {
+		console.log(e);
 	});	
 
 

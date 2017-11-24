@@ -1,4 +1,4 @@
-const request = require("./request-wrapper");
+const request = require("../util/request");
 // const config = {
 // 	'hostname': 'www.accuweather.com',
 // 	'path': '/en/browse-locations',
